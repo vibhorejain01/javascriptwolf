@@ -1,0 +1,265 @@
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+}
+
+/**All unordered list style type*/
+
+iframe {
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+ul > li {
+    padding: 40px 5px;
+}
+
+ul > li >a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul > li >a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+.header {
+    height: 50px;
+    background-color: #f7f7f7f7;
+}
+
+.header>a {
+    font-size: 25px;
+    color: #111;
+    margin: 13px;
+}
+
+.header>a:hover {
+    color: #666;
+}
+
+.menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.items {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.items > ul {
+    display: inline;
+}
+
+.items > a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: #f1f1f1;
+}
+
+.menu .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn {
+    text-decoration: none;
+    color: #fff;
+}
+
+.closebtn:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+
+.items>ul>li {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.items>ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.items>ul>li>a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+/**cards CSS starts**/
+
+/* .card {
+    max-width: 280px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: inline;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  .long {
+      height: 500px;
+  }
+  
+  .medium {
+      height :375px;
+  }
+
+  .card-hero{
+      margin-top: 75px;
+  }
+.card-fold-text{
+    margin-top: 50px;
+}
+
+.card-footer {
+    position: relative;
+    top: 70px;
+}
+
+.card-social-share {
+    position: absolute;
+    margin-left: 100px;
+}
+
+
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+/** Footer CSS starts**/
+
+.footer-social-icons {
+    position: absolute;
+    right: 50px;
+}
+
+/** Footer CSS ends**/
+
+/**Salesforce page CSS starts**/
+
+.info-header {
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    height: 55px;
+    z-index: 1;
+}
+
+.info-header>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 40px;
+}
+
+.info-header>a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+/**Salesforce page CSS ends**/
+
+/**Video page CSS starts**/
+
+.video-header {
+    align-items: center;
+    background-color: #111;
+    color: #fff;
+    height: 55px;
+    z-index: 1;
+}
+
+.video-header>a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 40px;
+}
+
+.video-header>a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+/**Video page CSS ends**/
+
+/**saleforce landing page starts**/
+
+
+.vertical {
+    border: 2px solid #888888;
+    border-radius: 5px;
+    height: 350px;
+    width: 300px;
+}
+
+.first-video {
+    height: 215px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.second-video {
+    height: 215px;
+    width: 200px;
+    margin-top: auto;
+}
+/**saleforce landing page ends**/
