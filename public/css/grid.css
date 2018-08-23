@@ -1,0 +1,169 @@
+
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+
+        " header    header       header    header   header"
+        " menu      content      content   content  ."
+        " menu      content      content   content  ."
+        " menu      content      content   content  ."
+        " menu      content      content   content  ."
+        " footer    footer       footer    footer   footer";
+}
+
+.header {
+    display: flex;
+    grid-area: header;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-area: content;
+}
+
+.content > div {
+    grid-column: span 2;
+}
+
+
+.card {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.footer {
+    grid-area: footer;
+    grid-column: 1/12;
+    
+}
+
+.items{
+    display: flex;
+}
+
+
+
+/**Salesforce page grid settings starts**/
+
+.salesforce-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 20% auto 20% 20%;
+    grid-template-areas: 
+
+        " header    header       header    header  "
+        " menu      content      content   content  "
+        " menu      content      content   content  "
+        " menu      content      content   content  "
+        " menu      content      content   content  "
+        " footer    footer       footer    footer   ";
+}
+
+/* .info-header {
+    display: flex;
+    flex-wrap:wrap;
+    grid-area: header;
+    grid-column: 1/-1;
+} */
+
+.sf-menu {
+    grid-area: menu;
+}
+
+
+.info-content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-area: content;
+}
+
+.info-footer {
+    display: grid;
+    grid-area: footer;
+    grid-column: 1/-1;
+}
+
+/**Salesforce page grid settings ends**/
+
+
+
+/**VIdeos pages grid starts**/
+
+.video-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px auto auto 100px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+        " header    header    header    header   "
+        " .      content      content   content  "
+        " footer    footer    footer    footer   ";
+}
+
+.video-header {
+    display: flex;
+    flex-wrap:wrap;
+    grid-area: header;
+    grid-column: 1/-1;
+}
+
+
+
+.video-content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-area: content;
+    grid-gap: 10px;
+}
+
+
+
+
+/**VIdeos pages grid ends**/
+
+
+/**Salesforce article page grid starts**/
+
+.article-wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px auto auto 100px;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+
+        " header    header       header    header   "
+        " content   content      content   content  "
+        " footer    footer       footer    footer   ";
+}
+
+.video-header {
+    display: flex;
+    flex-wrap:wrap;
+    grid-area: header;
+    grid-column: 1/-1;
+}
+
+.article-content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 40% 30% 30%;
+    grid-area: content;
+    grid-column: 2 / 4;
+    grid-gap: 10px;
+
+/**Salesforce article pages grid ends**/
