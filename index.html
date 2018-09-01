@@ -8,23 +8,37 @@
     <title>Javascript Wolf</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./public/css/mains.css">
 </head>
 
 <body>
     <header>
-        <div id="navbar">
-            <a href="#home">JSWOLF</a>
-            <a href="#news">Javascript</a>
-            <a href="#contact">SalesForce</a>
-            <a href="#contact">Misc</a>
-        </div>
+       
+        <div class="topnav" id="myTopnav">
+                <a href="#home">JSWolf</a>
+                <a href="#">Javascript</a>
+                <a href="#">SalesForce</a>
+                <a href="#">Misc</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
     </header>
     <main>
         <div class="coming-soon"></div>
     </main>
     <footer></footer>
-    
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>   
 </body>
 
 </html>
