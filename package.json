@@ -4,8 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "build": "assemble"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -31,7 +30,6 @@
     "typed.js": "^2.0.8"
   },
   "devDependencies": {
-    "assemble": "^0.24.3",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.2"
   }
