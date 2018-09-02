@@ -266,7 +266,7 @@ ul > li >a:hover {
 
 
 .coming-soon{
-    background-image: url(/assets/images/coming-soon-2461832_960_720.jpg);
+    background-image: url(../assets/images/coming-soon-2461832_960_720.jpg);
     /* Set a specific height */
     height: 700px; 
 
@@ -296,10 +296,7 @@ ul > li >a:hover {
     font-size: 17px;
   }
   
-  .topnav a.github-logo {
   
-  }
-
   .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -335,7 +332,9 @@ ul > li >a:hover {
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -346,4 +345,8 @@ ul > li >a:hover {
       display: block;
       text-align: left;
     }
+
+    .topnav.responsive a.github-logo {
+        display: none;
+      }
   }
