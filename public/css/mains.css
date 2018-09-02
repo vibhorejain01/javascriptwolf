@@ -266,7 +266,7 @@ ul > li >a:hover {
 
 
 .coming-soon{
-    background-image: url(../assets/images/coming-soon-2461832_960_720.jpg);
+    background-image: url(/assets/images/coming-soon-2461832_960_720.jpg);
     /* Set a specific height */
     height: 700px; 
 
@@ -296,6 +296,10 @@ ul > li >a:hover {
     font-size: 17px;
   }
   
+  .topnav a.github-logo {
+  
+  }
+
   .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -316,6 +320,14 @@ ul > li >a:hover {
         padding : 15px 30px;
     }
     .topnav a:not(:first-child) {display: none;}
+
+
+    .topnav a.github-logo {
+        display: block;
+        margin-left: 105px;
+        font-size: 18px;
+      }
+
     .topnav a.icon {
       float: right;
       display: block;
