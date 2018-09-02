@@ -9,36 +9,40 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./public/css/mains.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/mains.css">
 </head>
 
 <body>
     <header>
-       
         <div class="topnav" id="myTopnav">
-                <a href="#home">JSWolf</a>
-                <a href="#">Javascript</a>
-                <a href="#">SalesForce</a>
-                <a href="#">Misc</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
+            <a href="http://localhost:3000/">JSWolf</a>
+            <a href="#">Javascript</a>
+            <a href="/salesforce">SalesForce</a>
+            <a href="#">Misc</a>
+            <a href="https://github.com/vibhorejain01/javascriptwolf.com" target="_blank" class="github-logo">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </header>
     <main>
         <div class="coming-soon"></div>
     </main>
     <footer></footer>
     <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
             }
-            </script>   
+        }
+    </script>
 </body>
 
 </html>

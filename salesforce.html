@@ -23,18 +23,20 @@
 
 <body>
     <div class="wrapper">
-        <div class="header">
-            <a href="#" class="open-menu" onclick="openNav()">
-                <i class="fa fa-bars"></i>
-            </a>
-
-            <a href="http://localhost:3000/">
-                <i class="fab fa-angrycreative"></i>
-            </a>
-            <a href="https://github.com/vibhorejain01/javascriptwolf" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="http://localhost:3000/">JSWolf</a>
+                <a href="#">Javascript</a>
+                <a href="/salesforce">SalesForce</a>
+                <a href="#">Misc</a>
+                <a href="https://github.com/vibhorejain01/javascriptwolf.com" target="_blank" class="github-logo">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
         <div class="menu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="items">
@@ -344,22 +346,15 @@
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script> -->
     <script>
-        $(function () {
-            // $('.menu').hide();
-        });
-
-        function openNav() {
-            $(".menu").css("width", 240);
-            // $(".menu").style.width = "50%";
-        }
-
-        function closeNav() {
-            $(".menu").css("width", 0);
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
-
-
-
 </body>
 
 </html>
