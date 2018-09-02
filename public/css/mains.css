@@ -296,6 +296,7 @@ ul > li >a:hover {
     font-size: 17px;
   }
   
+  
   .topnav a:hover {
     background-color: #ddd;
     color: black;
@@ -316,6 +317,14 @@ ul > li >a:hover {
         padding : 15px 30px;
     }
     .topnav a:not(:first-child) {display: none;}
+
+
+    .topnav a.github-logo {
+        display: block;
+        margin-left: 105px;
+        font-size: 18px;
+      }
+
     .topnav a.icon {
       float: right;
       display: block;
@@ -323,7 +332,9 @@ ul > li >a:hover {
   }
   
   @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -334,4 +345,8 @@ ul > li >a:hover {
       display: block;
       text-align: left;
     }
+
+    .topnav.responsive a.github-logo {
+        display: none;
+      }
   }
